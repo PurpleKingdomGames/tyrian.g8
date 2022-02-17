@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "parcel index.html --no-cache --dist-dir dist --log-level info",
+    "build": "parcel build index.html --dist-dir dist --log-level info"
+  },
+  "devDependencies": {
+    "parcel": "^$parcel_js_version$"
+  },
+  "dependencies": {
+    "snabbdom": "^$snabbdom_version$"
+  }
+}
