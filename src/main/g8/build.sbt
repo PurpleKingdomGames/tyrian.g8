@@ -37,7 +37,7 @@ lazy val $project_name$ =
       }
     )
     .settings( // Welcome message
-      logo := "$module_name$ (v" + version.value + ")",
+      logo := "$webapp_title$ (v" + version.value + ")",
       usefulTasks := Seq(
         UsefulTask("", "fastOptJS", "Rebuild the JS (use during development)"),
         UsefulTask("", "fullOptJS", "Rebuild the JS and optimise (use in production)"),
