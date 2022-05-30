@@ -16,8 +16,8 @@ lazy val $project_name$ =
       scalaVersion := "$scala_version$",
       organization := "$organization$",
       libraryDependencies ++= Seq(
-        "io.indigoengine" %%% "tyrian" % "$tyrian_version$",
-        "org.scalameta"   %%% "munit"  % "$munit_version$" % Test
+        "io.indigoengine" %%% "tyrian-io" % "$tyrian_version$",
+        "org.scalameta"   %%% "munit"     % "$munit_version$" % Test
       ),
       testFrameworks += new TestFramework("munit.Framework"),
       scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) },

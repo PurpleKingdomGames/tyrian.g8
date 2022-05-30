@@ -5,8 +5,5 @@
   },
   "devDependencies": {
     "parcel": "^$parcel_js_version$"
-  },
-  "dependencies": {
-    "snabbdom": "^$snabbdom_version$"
   }
 }
