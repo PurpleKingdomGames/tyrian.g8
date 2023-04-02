@@ -37,11 +37,19 @@ lazy val $project_name$ =
       }
     )
     .settings( // Welcome message
-      logo := "$webapp_title$ (v" + version.value + ")",
+      logo := List(
+        "",
+        "$webapp_title$ (v" + version.value + ")",
+        "",
+        "> Please Note: By default tyrianapp.js expects you to run fastLinkJS.",
+        ">              To use fullOptJS, edit tyrianapp.js replacing '-fastopt'",
+        ">              with '-opt'.",
+        ""
+      ).mkString("\n"),
       usefulTasks := Seq(
-        UsefulTask("", "fastOptJS", "Rebuild the JS (use during development)"),
-        UsefulTask("", "fullOptJS", "Rebuild the JS and optimise (use in production)"),
-        UsefulTask("", "code", "Launch VSCode")
+        UsefulTask("fastLinkJS", "Rebuild the JS (use during development)").noAlias,
+        UsefulTask("fullLinkJS", "Rebuild the JS and optimise (use in production)").noAlias,
+        UsefulTask("code", "Launch VSCode").noAlias
       ),
       logoColor        := scala.Console.MAGENTA,
       aliasColor       := scala.Console.BLUE,
