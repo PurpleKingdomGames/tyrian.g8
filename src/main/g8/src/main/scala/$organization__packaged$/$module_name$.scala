@@ -7,7 +7,7 @@ import tyrian.*
 import scala.scalajs.js.annotation.*
 
 @JSExportTopLevel("TyrianApp")
-object $module_name$ extends TyrianApp[Msg, Model]:
+object $module_name$ extends TyrianIOApp[Msg, Model]:
 
   def router: Location => Msg =
     Routing.none(Msg.NoOp)
