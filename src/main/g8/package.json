@@ -4,6 +4,6 @@
     "build": "parcel build index.html --dist-dir dist --log-level info"
   },
   "devDependencies": {
-    "parcel": "^$parcel_js_version$"
+    "parcel": "^2.1.0"
   }
 }
