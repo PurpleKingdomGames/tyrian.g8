@@ -11,11 +11,11 @@ lazy val $project_name$ =
     .settings( // Normal settings
       name         := "$project_name$",
       version      := "$project_version$",
-      scalaVersion := "3.6.2",
+      scalaVersion := "3.6.3",
       organization := "$organization$",
       libraryDependencies ++= Seq(
-        "io.indigoengine" %%% "tyrian-io" % "0.12.0",
-        "org.scalameta"   %%% "munit"     % "1.0.4" % Test
+        "io.indigoengine" %%% "tyrian-io" % "0.13.0",
+        "org.scalameta"   %%% "munit"     % "1.1.0" % Test
       ),
       testFrameworks += new TestFramework("munit.Framework"),
       scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) },
