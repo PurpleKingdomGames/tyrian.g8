@@ -41,7 +41,7 @@
       in
       {
         devShells.default = pkgs.mkShell {
-          name = "indigo-dev-shell";
+          name = "tyrian-dev-shell";
           buildInputs = jvmInputs ++ jsInputs;
           shellHook = jvmHook + jsHook;
         };
